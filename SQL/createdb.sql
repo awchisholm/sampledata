@@ -1,12 +1,11 @@
-CREATE TABLE customer (
-	Id INTEGER primary key AUTOINCREMENT not null,
-	Name TEXT,
-	Height REAL
+CREATE TABLE "customer" (
+	"Id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	"Name"	TEXT,
+	"Height"	REAL
 );
-
-CREATE TABLE booking (
-	Id INTEGER primary key AUTOINCREMENT not null,
-	Details TEXT,
-	CustomerId INTEGER,
-	constraint customerid_fk foreign key (CustomerId) references customers(Id)
+CREATE TABLE "booking" (
+	"Id"	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	"Details"	TEXT,
+	"CustomerId"	INTEGER,
+	CONSTRAINT "customerid_fk" FOREIGN KEY("CustomerId") REFERENCES "customer"("Id")
 );
