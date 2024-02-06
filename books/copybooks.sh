@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 !wget -q -O Baum_GlindaOfOz.txt https://raw.githubusercontent.com/awchisholm/sampledata/master/books/Baum_GlindaOfOz.txt
 !wget -q -O Baum_LostPrincess.txt https://raw.githubusercontent.com/awchisholm/sampledata/master/books/Baum_LostPrincess.txt
 !wget -q -O Baum_WonderfulWizardOfOz.txt https://raw.githubusercontent.com/awchisholm/sampledata/master/books/Baum_WonderfulWizardOfOz.txt
